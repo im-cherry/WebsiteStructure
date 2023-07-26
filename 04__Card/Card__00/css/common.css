@@ -1,0 +1,36 @@
+:root {
+  --b1: rgba(0, 0, 0, 0.87);
+  --b2: rgba(0, 0, 0, 0.54);
+  --b3: rgba(0, 0, 0, 0.38);
+  --b4: rgba(0, 0, 0, 0.12);
+
+  --w1: rgba(255, 255, 255, 1.00);
+  --w2: rgba(255, 255, 255, 0.70);
+  --w3: rgba(255, 255, 255, 0.50);
+  --w4: rgba(255, 255, 255, 0.12);
+
+  --main: #4285F4;
+  --sub01: #689DF6;
+  --sub02: #1A69EF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--b1);
+}
+
+a {
+  text-decoration: none;
+  color: var(--b1);
+}
+
+button {
+  all: unset;
+}

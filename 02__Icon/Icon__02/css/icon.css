@@ -1,0 +1,47 @@
+#icon .iconWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#icon a {
+  flex-basis: calc(100% / 3);
+  padding: 40px 0 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: 1px solid transparent;
+  box-shadow: 2px 2px 4px 0 transparent;
+  transition: 0.5s;
+}
+
+#icon a:hover {
+  border-radius: 10px;
+  outline: 1px solid var(--b4);
+  box-shadow: 2px 2px 4px 0 var(--b3);
+  background-color: #fff;
+}
+
+#icon a .image {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+#icon a .image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: invert(52%) sepia(82%) saturate(773%) hue-rotate(193deg) brightness(100%) contrast(94%);
+}
+
+#icon a .text {
+  text-align: center;
+  padding: 0 30px;
+}
+
+#icon a .text p:last-child {
+  color: var(--b2);
+  font-size: 14px;
+}

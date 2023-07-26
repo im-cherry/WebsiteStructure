@@ -1,0 +1,70 @@
+#card .cardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#card a {
+  width: calc((100% / 4) - (15px * 3 / 4));
+}
+
+#card a .image {
+  position: relative;
+  height: 0;
+  padding-top: 100%;
+}
+
+#card a .image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#card a .text {
+  width: 100%;
+  height: 110px;
+  padding: 10px 15px 0;
+  background-color: var(--sub01);
+}
+
+#card a .text p:first-child {
+  width: 100%;
+  margin-bottom: 5px;
+  color: var(--w1);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#card a .text p:last-child {
+  font-size: 14px;
+  color: var(--w2);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* hover */
+#card a {
+  transition: 0.5s;
+  outline: 1px solid transparent;
+  box-shadow: 2px 2px 3px 3px transparent;
+}
+
+#card a:hover {
+  outline: 1px solid var(--b4);
+  box-shadow: 2px 2px 3px 3px var(--b3);
+}
+
+#card a .text p {
+  transition: 0.5s;
+}
+
+#card a:hover .text p {
+  text-decoration: underline;
+}

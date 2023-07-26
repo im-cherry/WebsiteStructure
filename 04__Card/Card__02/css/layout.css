@@ -1,0 +1,13 @@
+#wrap {
+  width: 100%;
+}
+
+#card {
+  width: 100%;
+}
+
+#card .cardWrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px;
+}

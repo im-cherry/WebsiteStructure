@@ -1,0 +1,100 @@
+#slider {
+  position: relative;
+}
+
+#slider .image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#slider .image .imageWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.6s;
+}
+
+#slider .image .imageWrapper:nth-child(1) {
+  background-color: #ED174B;
+}
+
+#slider .image .imageWrapper:nth-child(2) {
+  background-color: #FFD740;
+}
+
+#slider .image .imageWrapper:nth-child(3) {
+  background-color: #95CEDD;
+}
+
+#slider .image .imageWrapper a {
+  width: 100%;
+  height: 100%;
+}
+
+#slider .image .imageWrapper a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+#slider .control {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#slider .control .controlWrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 5px 5px 5px 20px;
+  border-radius: 100px;
+  background-color: var(--b2);
+}
+
+#slider .control .controlWrapper .text {
+  color: var(--w1);
+}
+
+#slider .control .controlWrapper .icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#slider .control .controlWrapper .icon button {
+  cursor: pointer;
+}
+
+#slider .control .controlWrapper .icon button:nth-child(1) {
+  width: 24px;
+  height: 24px;
+}
+
+#slider .control .controlWrapper .icon button:nth-child(2) {
+  width: 20px;
+  height: 20px;
+}
+
+#slider .control .controlWrapper .icon button:nth-child(3) {
+  width: 24px;
+  height: 24px;
+}
+
+#slider .control .controlWrapper .icon button img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

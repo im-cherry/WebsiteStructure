@@ -1,0 +1,42 @@
+#gallery {}
+
+#gallery .galleryWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#gallery .line {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+}
+
+#gallery a {
+  width: calc((100% / 4) - (15px * 3 / 4));
+}
+
+#gallery a .imageWrapper {
+  position: relative;
+  height: 0;
+  padding-top: 100%;
+  overflow: hidden;
+}
+
+#gallery a .imageWrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+  transition: 0.5s;
+}
+
+/* hover */
+#gallery a:hover .imageWrapper img {
+  filter: brightness(100%);
+  transform: scale(1.3);
+}

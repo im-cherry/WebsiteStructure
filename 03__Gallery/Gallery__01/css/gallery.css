@@ -1,0 +1,33 @@
+#gallery .galleryWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#gallery a {
+  width: calc((100% / 4) - (15px * 3 / 4));
+}
+
+#gallery a .imageWrapper {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+#gallery a .imageWrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(80%);
+}
+
+/* hover */
+
+#gallery a .imageWrapper img {
+  transition: 0.5s;
+}
+
+#gallery a:hover .imageWrapper img {
+  transform: scale(1.2);
+  filter: brightness(100%);
+}

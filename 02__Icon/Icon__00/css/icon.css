@@ -1,0 +1,40 @@
+#icon {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+#icon a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+#icon a .image {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid var(--b4);
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px 0 transparent;
+  transition: 0.5s;
+}
+
+#icon a:hover .image {
+  box-shadow: 2px 2px 4px 0 var(--b3);
+}
+
+#icon a .image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 10px;
+  filter: invert(52%) sepia(82%) saturate(773%) hue-rotate(193deg) brightness(100%) contrast(94%);
+}
+
+#icon a .text p {
+  color: var(--b2);
+  font-size: 14px;
+}
